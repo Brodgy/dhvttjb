@@ -1,0 +1,29 @@
+{
+    "Actor":{},
+    "Item":{
+        "types": [
+            "weapon", "armor"
+        ],
+        "templates": {
+            "itemDescription": {
+                "description": ""
+            }
+        },
+        "weapon": {
+            "templates": [
+                "itemDescription"
+            ],
+            "attackWith": "strength",
+            "damage": 0,
+            "range": "Melee",
+            "damageType": "physical",
+            "burden": "oneHand"
+        },
+        "armor": {
+            "templates": [
+                "itemDescription"
+            ],
+            "base": 0
+        }
+    }
+}
