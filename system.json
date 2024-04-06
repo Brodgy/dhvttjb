@@ -28,5 +28,5 @@
     "secondaryTokenAttribute": "resources.hope",
     "background": "./assets/daggerheartSplash.png",
     "manifest": "https://github.com/Brodgy/dhvttjb/blob/master/system.json",
-    "download": "https://github.com/Brodgy/dhvttjb/releases/tag/Test"
+    "download": "https://github.com/Brodgy/dhvttjb/archive/refs/tags/Test.zip"
 }
