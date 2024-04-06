@@ -26,5 +26,6 @@
     "gridUnits": "ft",
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.hope",
-    "background": "./assets/daggerheartSplash.png"
+    "background": "./assets/daggerheartSplash.png",
+    "manifest": "https://github.com/Brodgy/dhvttjb/blob/master/system.json"
 }
