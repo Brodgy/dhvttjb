@@ -27,5 +27,6 @@
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.hope",
     "background": "./assets/daggerheartSplash.png",
-    "manifest": "https://github.com/Brodgy/dhvttjb/blob/master/system.json"
+    "manifest": "https://github.com/Brodgy/dhvttjb/blob/master/system.json",
+    "download": "https://github.com/Brodgy/dhvttjb/releases/tag/Test"
 }
