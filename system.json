@@ -9,7 +9,7 @@
         }
     ],
     "esmodules": [
-        "modules/dhvttjb-module.mjs"
+        "modules/dhvttjb-module.js"
     ],
     "styles": [
         "styles/dhvttjb-styles.css"
@@ -22,6 +22,6 @@
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.hope",
     "background": "systems/dhvttjb/assets/daggerheartSplash.png",
-    "manifest": "https://github.com/Brodgy/dhvttjb/blob/master/system.json",
-    "download": "https://github.com/Brodgy/dhvttjb/archive/refs/tags/Test.zip"
+    "manifest": "",
+    "download": ""
 }
