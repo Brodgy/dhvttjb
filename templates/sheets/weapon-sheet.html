@@ -15,9 +15,9 @@
             </tr>
             <tr>
                 <td>
-                    <select name="data.attackWith">
-                        {{#select data.attackWith}}
-                        {{#each config.attackTypes as |name type|}}
+                    <select name="data.traits">
+                        {{#select data.traits}}
+                        {{#each config.traits as |name type|}}
                         <option value="{{type}}">{{name}}</option>
                         {{/each}}
                         {{/select}}
@@ -58,6 +58,6 @@
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
+        <textarea name="data.description" placeholder="Weapon Description">{{data.description}}</textarea>
      </div>
 </form>

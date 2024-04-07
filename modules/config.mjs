@@ -1,6 +1,6 @@
 export const dhvttjb = {};
 
-dhvttjb.attackTypes = {
+dhvttjb.traits = {
     strength: "Strength",
     agility: "Agility",
     instinct: "Instinct",
@@ -20,9 +20,9 @@ dhvttjb.attackRange = {
 dhvttjb.damageType = {
     physical: "Physical",
     magic: "Magic"
-}
+};
 
 dhvttjb.itemBurden = {
     oneH: "1 Handed",
     twoH: "2 Handed"
-}
+};

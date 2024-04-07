@@ -9,7 +9,7 @@
         }
     ],
     "esmodules": [
-        "modules/dhvttjb-module.js"
+        "dhvttjb.js"
     ],
     "styles": [
         "styles/dhvttjb-styles.css"

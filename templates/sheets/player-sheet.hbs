@@ -1,0 +1,62 @@
+<form class="{{cssClass}} {{actor.type}} flexCol" autocomplete="off">
+
+    <header class="sheet-header">
+        <img class="profile-img" src-"{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <div class="charinfos grid grid-2col">
+                <div class="charinfo flex-group-center">
+                    <label for="name" class="resource-label">Name</label>
+                    <div class="resource-content">
+                        <input name="name" type="text" value ="{{actor.name}}" placeholder="name"/>
+                    </div>
+                    <label for="pronouns" class="resource-label">Pronouns</label>
+                    <div class="resource-content">
+                        <input name="pronouns" type="text" value ="{{actor.pronouns}}" placeholder="he/him"/>
+                    </div>
+                    <label for="heritage" class="resource-label">Heritage</label>
+                    <div class="resource-content">
+                        <input name="heritage" type="text" value ="{{actor.heritage}}" placeholder="low-borne"/>
+                    </div>
+                    <label for="class" class="resource-label">Class/Subclass</label>
+                    <div class="resource-content">
+                        <input name="class" type="text" value ="{{actor.class}}" placeholder="class/subclass"/>
+                    </div>
+                </div>
+            </div>
+            <div class="resources grid grid-2col">
+                <div class="resource flex-group-center">
+                    <label for="system.health.value" class="resource-label">HP</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" name="system.healthPoints.value" value="{{system.healthPoints.value}}" data-dtype="Number"/>
+                        <span> / </span>
+                        <input type="text" name="system.healthPoints.max" value="{{system.healthPoints.max}}" data-dtype="Number"/>
+                    </div>
+                </div>
+                <div class="resource flex-group-center">
+                    <label for="system.hope.value" class="resource-label">Hope</label>
+                    <div class="resource-content flexrow flex-center flex-between">
+                        <input type="text" name="system.hope.value" value="{{system.hope.value}}" data-dtype="Number"/>
+                        <span> / </span>
+                        <input type="text" name="system.hope.max" value="{{system.hope.max}}" data-dtype="Number"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="traits grid grid-6col">
+                {{#each config.traits as |name type|}}
+                <div class="traits flexrow flex-group-center">
+                    <label for="config.traits.{{key}}.value" class="resource-label">{{key}}</label>
+                    <input type="text" name="config.traits.{{key}}.value" value="{{trait.value}}" data-dtype="Number"/>
+                    <span class="trait-mod">{{numberFormat trait.mod decimals=0 sign=true}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </header>
+
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="items">Items</a>
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+</form>
