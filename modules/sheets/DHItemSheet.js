@@ -4,10 +4,14 @@ export default class DHItemSheet extends ItemSheet {
     };
 
     getData() {
-        const data = super.getData();
-
-        data.config = CONFIG.dhvttjb;
-
-        return data;
+        const baseData = super.getData();
+        let sheetData = {
+            owner: this.item.isOwner,
+            editable: this.isEditable,
+            item: baseData.item,
+            data: baseData.item.data.data,
+            config: CONFIG.dhvttjb
+        };
+        return sheetData;
     }
 }
